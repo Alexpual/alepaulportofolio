@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEPAUL - portalfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+          background: url('ale.jpg');  
+
+        }
+        
+        header{
+            background-color: #222222;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 0 25px #222;
+    
+          
+            top: -0.3vh;
+            
+            
+        }
+        
+        header::backdrop{
+            blur(10px)
+        }
+        
+        header h1{
+            color: #fff;
+            text-align: center;
+            
+        }
+
+        .container{
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background-color: rgba(21, 23, 24, 0.616);
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(8, 66, 66, 0.514);
+            transition:  2 ease; 
+            
+            
+        }
+        
+         
+       
+
+       
+           
+            
+            
+     
+
+        ul{
+             margin-bottom:2px;
+            list-style: none;
+     
+        }
+        
+
+        li a{
+            text-decoration-line: none;
+            background-color: green;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 4px;
+            color: #fff;
+        }
+
+        li a:focus{
+            background-color: red;
+           
+        }
+
+        .profile-picture{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 2px solid green;
+            background-color: green;
+        }
+
+        
+
+        img{
+            height: 300px;
+            width: 400px;
+            border-radius: 10px ;
+        }
+
+        p{
+            line-height: 0.9;
+           
+        }
+        
+        .contact{
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(45deg,aqua);
+            border-radius: 20px;
+            padding: 40px;
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+           backdrop-filter: blur(10px);
+            
+        }
+        
+        label{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 400;
+            font-size: 20pt;
+            text-align:start ;
+            color: #fff;
+        }
+
+        input{
+            outline: none;
+            text-align: center;
+            border-radius: 20px;
+            text-decoration: solid;
+            font-size: 14pt;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .code{
+            outline: none;
+            text-align: center;
+            border-radius: 20px;
+            text-decoration: solid;
+            font-size: 14pt;
+            font-weight: 300;
+            width: 80px;
+        }
+
+        textarea{
+            outline: none;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom:2px;
+        }
+        
+        button{
+            border-radius: 10px;
+            background-color: green;
+            outline: none;
+            border: none;
+            font-weight: 600;
+            font-size: 14pt;
+            transition: background-color 0.3s ease-in-out;
+            animation: btn 3s ;
+        }
+         
+        button:hover{
+            background-color: red;
+        }
+
+        .personal-contact{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        
+        footer{
+            
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+            text-align: center;
+        }
+        
+        .menu-icon {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: none;
+      position: fixed;
+    }
+    .menu-icon span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #333;
+      margin-bottom: 5px;
+  
+    }
+    .menu-items {
+      display: none;
+      position: absolute;
+      background-color: 
+      padding: 10px;
+      border: 1px solid #ccc;
+      position: fixed;
+    }
+      
+      .sticky{
+       position: fixed;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ALEPAUL PORTFOLIO WEBSITE</h1>
+        </header>
+        
+    <button id="menu-button" class="menu-icon ">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div id="menu-items" class="menu-items">
+    <ul>
+                   <li><a href="#"> <i class="fa-solid fa-house"></i> HOME</a></li>
+                   <li><a class="" href="#introduction">INTRODUCTION</a></li>
+                    <li><a class="" href="#about">ABOUT</a></li>
+                   <li><a class="" href="#project">PROJECTS</a></li>
+                   <li><a class="" href="#services">SERVICES</a></li>
+                   <li><a  class="" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--introduction part-->
+<center>
+<section id="introduction" class="py-5">
+<div class="container">
+    <h1 class="section title">introduction</h1>
+    <img src="ale.jpg" class="profile-picture" alt="profilepic.jpg">
+     <h2>alex paul</h2>
+     
+     <p>My name is name is <strong style="color: blue;">ALEX PAUL</strong> the owner of this portofolio website</p>
+     <i>you just know my name, but not my limit</i>
+    </div>
+</section>
+</center>
+
+<!--about part-->
+<center>
+<section id="about" class="about-section">
+<div class="container">
+    <h1 class="section title"> ABOUT</h1>
+    <dl>
+         <dt>
+            <strong style="color: #f00">BIO</strong>
+         </dt>
+             <dd>1.you hurt me and i hack your account</dd>
+             <dd>2.Nobody is perfect in this word</dd>
+             <dd>3.Never chase for attetion just be there for those who are there for you</dd>
+    </dl>
+    <dl>
+        <dt ><strong style="color: #f00;">SKILLS</strong></dt>
+        <dd>1. TAI-CHI</dd>
+        <dd>2. H-CUTTER</dd>
+        <dd>3. TAI-KON</dd>
+    </dl>
+    <dl>
+       <dt><strong style="color:#f00;">EXPERIENCE</strong></dt>  
+        <dd>2. WEBSITE DEVELOPMENT</dd>
+        <dd>3. PYTHON PROGRAMING</dd>
+        <dd>4. COMPUTER AND PHONE REPAIRING</dd>
+    </dl>
+</div>
+</center>
+</section>
+
+<!--project part-->
+<center>
+    <section id="project" class="py-5"></section>
+    <div class="container">
+        <h1 class="section title">PROJECTS</h1>
+        <div class="project">
+        <img src="nsikapic.jpg" alt="nsika">
+       <br>
+        <p>We create this platform called  
+            <strong style="color: blue;">
+                NSIKA-premium E-commerce</strong> where you can use this website to buy goods and services in your current 
+            country and outside the country</p>
+            <p >👉click the link to access it <a href="https://mediumspringgreen-ostrich-969937.hostigersite.com/index.php">www.nsinka.com</a></p>
+            <img src="webinter.jpg" alt="webinter">
+       <br>
+        <p>I create this platform called  
+            <strong style="color: blue;">
+                WEBINETR platform </strong> where you can use this site to downlaod music,firms,clips sports videos and etc</p>
+            <p >👉click the link to access it <a href="https://alexpaul.github.io/webinter">https://alexpaul.github.io/webinter</a></p>   
+            <img src="wethem.jpg" alt="wethem">
+            <br>
+             <p>I create this platform called  
+                 <strong style="color: blue;">
+                     Wethem platform </strong> where you can use this site to downlaod music,find jods,market places,education and etc</p>
+                 <p >👉click the link to access it <a href="https://www.wethem.org">www.wethem.org</a></p>   
+    </div>
+</center>
+</section>
+
+<Center>
+  <section id="services" class="py-5">
+    <div class="container">
+
+        <h1 class="section-title">SERVICES</h1>
+        <details>
+            <summary style="color: blue;"> <strong>1.WEBSITE DEVELOPMENT</strong></summary>
+           <dl>
+            <dd>We offer website development</dd>
+            <dt>if you want to create a webite visite us so that we can make huge website in few day and we offeer them in affordable prices and we are negoniatable</dt>
+           </dl>
+        </details>
+        <details>
+            <summary style="color: BLUE;"> <strong>2. CYBERSECURITY</strong></summary>
+           <dl>
+            <dd>We offer education in CYBERSECURITY </dd>
+            <dt>we offer education in cybersecurity and we offer the Computer security to companies </dt>
+            <dt> <strong style="color: red;">NOTE:</strong> this education is done both online and at our compus in zambia</dt>
+           </dl>
+        </details>
+        <details>
+            <summary style="color: BLUE;"> <strong>2. CCTV INSTALLATION</strong></summary>
+           <dl>
+            <dd>We offer CCTV INSTALLATION both in education and we do hired</dd>
+            <dt>we offer education in CCTV and we installl CCTV cameras to companies  in affordable prices</dt>
+            <dt> <strong style="color: red;">NOTE:</strong> this education is done both online and at our compus in zambia</dt>
+           </dl>
+        </details>
+    </div>
+   </section>
+</Center>
+
+<!--contact section-->
+<center>
+    <section id="contact">
+        <div class="container">
+            <h2>CONTACT US</h2>
+            <div class="personal-contact">
+            <span>My Email: <a href="mailto:alexelaispaul85@gmail.com">alexelaispaul85@gmail.com</a></span>
+            <span>Phome number: <a href="tel:+265990828040">+265990828040</a></span>
+            </div>
+            <div class="contact">
+             <label for="firstname">firstname</label>
+             <input type="text" name="firstname" id="firstname" placeholder="--firstname here--" required>
+             <br>
+             <label for="lastname">lastname</label>
+             <input type="lastname" name=";astname" id="lastname" placeholder="--lastname here--">
+             <br>
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email" placeholder="example@gmial.com">
+             <br>
+             <label for="phone">phone</label>
+             <input list="code" name="code" id="codes" class="code" placeholder="+0">
+             <datalist id="code">
+                <option value="+0">
+                <option value="+1">
+                <option value="+265">
+                <option value="+44">
+                <option value="+260">
+                <option value="+27">
+                <option value="+07">
+                <option value="+11">
+                <option value="+25">
+                <option value="+261">
+                <option value="+2">
+             </datalist>
+             <input type="phone" name="phone" id="phone" placeholder="9999757438">
+            <label for="massage">massage</label>
+             <textarea name="textarea" id="textarea"></textarea>
+             <button type="submit" id="btn-send">send</button>
+            </div>
+        </div>
+    </section>
+    <h2>follow us</h2>
+    <i class="fab fa-facebook"></i>
+</center>
+<footer> &COPY;2025 alepaul all rights revised</footer>
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const menuItems = document.getElementById('menu-items');
+    const closeButton = document.getElementById('close-button');
+
+    // Toggle the menu items when the menu button is clicked
+    menuButton.addEventListener('click', () => {
+      menuItems.style.display = menuItems.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Close the menu items when the close button is clicked
+    closeButton.addEventListener('click', () => {
+      menuItems.style.display = 'none';
+    });
+
+    // Close the menu items when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!menuItems.contains(event.target) && event.target !== menuButton) {
+        menuItems.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
